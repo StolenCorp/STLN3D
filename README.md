@@ -50,7 +50,18 @@ Comprueba en navegador:
 4. Comprueba el despliegue en el subdominio asignado y luego configura tu dominio elegido desde el panel de Cloudflare.
 5. Reemplaza `og:image` por una imagen PNG/JPEG de 1200 × 630 px alojada en una URL HTTPS absoluta del dominio final. El SVG local actual es una plantilla y su compatibilidad en redes es limitada. Agrega `og:url` y canonical con ese dominio.
 
-La publicación y la conexión de cuentas no se han realizado desde este proyecto.
+La versión de prueba en Cloudflare está publicada en https://stln3d.pages.dev/.
+
+## Publicar en GitHub Pages
+
+El workflow `.github/workflows/pages.yml` compila y prueba el sitio, y publica únicamente `dist/` al subir cambios a `main`. También permite ejecutar el despliegue manualmente desde Actions.
+
+1. Abre https://github.com/StolenCorp/STLN3D/settings/pages y elige **GitHub Actions** como Source en Build and deployment.
+2. Si GitHub solicita un cambio de plan, Pages desde este repositorio privado requiere GitHub Pro para esta cuenta personal. La alternativa es cambiar explícitamente la visibilidad del repositorio a público. El workflow no cambia esa visibilidad.
+3. En Actions, selecciona **Deploy GitHub Pages → Run workflow → main** para desplegar después de activar Pages.
+4. Espera a que build y deploy terminen correctamente y abre https://stolencorp.github.io/STLN3D/.
+
+Las rutas de recursos son relativas para funcionar bajo `/STLN3D/`. Cloudflare mantiene su despliegue independiente. La dirección de GitHub Pages solo estará activa tras habilitar el servicio y completar el primer despliegue. Consulta las restricciones de uso comercial de GitHub Pages: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits.
 
 ## Antes de lanzar
 
