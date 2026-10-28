@@ -1,0 +1,35 @@
+[
+  {
+    "id": "maceta-geo-01",
+    "nombre": "Maceta Geo",
+    "categoria": "Hogar",
+    "precio": 35,
+    "imagenes": ["img/maceta.svg", "img/maceta-detalle.svg"],
+    "colores": ["Arena", "Negro", "Verde"],
+    "descripcion": "Una pequeña pieza de geometría para tu rincón favorito. Maceta de PLA, 12 cm de alto. Uso interior; no incluye planta.",
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "id": "organizador-orbita-01",
+    "nombre": "Organizador Órbita",
+    "categoria": "Escritorio",
+    "precio": 45,
+    "imagenes": ["img/organizador.svg"],
+    "colores": ["Terracota", "Arena", "Negro"],
+    "descripcion": "Dale un lugar a tus ideas y a tus herramientas. Organizador de escritorio en PLA, 10 cm de alto y 9 cm de diámetro.",
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "id": "soporte-arco-01",
+    "nombre": "Soporte Arco",
+    "categoria": "Accesorios",
+    "precio": 28,
+    "imagenes": ["img/soporte.svg"],
+    "colores": ["Verde", "Arena", "Negro"],
+    "descripcion": "Tu celular, siempre a la vista. Soporte de PLA con espacio para el cable de carga. Medidas: 8 × 8 × 10 cm.",
+    "disponible": true,
+    "destacado": false
+  }
+]

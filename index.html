@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STLN3D — Objetos con otra dimensión</title>
+  <meta name="description" content="Objetos impresos en 3D para tu hogar y escritorio. Explora STLN3D, elige tus colores y arma tu pedido por WhatsApp. Lima, Perú.">
+  <meta property="og:title" content="STLN3D — Objetos con otra dimensión">
+  <meta property="og:description" content="Diseño que se imprime y se vive. Descubre objetos para tu día a día, hechos en Lima.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:image" content="img/social.svg">
+  <meta name="theme-color" content="#f5f3ed">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="antialiased">
+  <div class="announcement">Hecho capa a capa, en Lima, Perú <span>↗</span></div>
+  <header class="site-header">
+    <a href="#" class="logo" aria-label="STLN3D, inicio">STLN<span>3D</span><sup>®</sup></a>
+    <nav aria-label="Principal"><a href="#catalogo">Colección</a><a href="#como-comprar">Cómo comprar</a></nav>
+    <button id="open-cart" class="cart-trigger" aria-haspopup="dialog">Tu carrito <span id="cart-count">0</span></button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> DISEÑO LOCAL · IMPRESIÓN 3D</p><h1>Objetos con<br>otra <em>dimensión.</em></h1><p class="hero-description">Pequeñas piezas. Grandes ideas. Dale un giro a tus espacios con objetos hechos capa a capa.</p><a class="button button-dark" href="#catalogo">Explorar la colección <span>↗</span></a><div class="hero-footnote"><span>01 — Colección de objetos</span><span>Diseñados para tu día a día</span></div></div>
+      <div class="hero-art"><span class="art-label">FORMA / FUNCIÓN / TEXTURA</span><img src="img/maceta.svg" alt="Ilustración de una maceta geométrica color arena" width="640" height="640" fetchpriority="high"><div class="art-caption"><span>Maceta Geo<br><small>Una nueva perspectiva.</small></span><a href="#catalogo" aria-label="Ver Maceta Geo">↗</a></div><span class="art-index">STLN — 001</span></div>
+    </section>
+    <div class="values"><span>Diseño con intención</span><span>✳</span><span>Impreso en 3D</span><span>✳</span><span>Hecho en Lima</span><span>✳</span><span>A tu estilo</span></div>
+    <section id="catalogo" class="catalog section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">ELIGE TU PRÓXIMA PIEZA</p><h2>Fuera de lo común.<span> Dentro de tu espacio.</span></h2></div><p id="result-count" aria-live="polite"></p></div>
+      <div class="catalog-tools"><div id="categories" class="categories" role="group" aria-label="Filtrar por categoría"></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Busca una pieza…" aria-label="Buscar productos por nombre"></label></div>
+      <p class="demo-note">Catálogo de muestra · Precios referenciales e ilustraciones de producto.</p>
+      <div id="products" class="product-grid" aria-live="polite"><p>Cargando colección…</p></div>
+    </section>
+    <section id="como-comprar" class="how section-wrap"><div><p class="eyebrow">DE NUESTRA MESA A LA TUYA</p><h2>Lo eliges tú.<br>Lo creamos aquí.</h2><p>Una forma más cercana de comprar diseño.</p></div><ol><li><span>01</span><div><h3>Encuentra tu pieza</h3><p>Explora la colección y elige el color que va contigo.</p></div></li><li><span>02</span><div><h3>Arma tu pedido</h3><p>Agrega tus favoritos al carrito y envíanos la lista por WhatsApp.</p></div></li><li><span>03</span><div><h3>Coordinamos contigo</h3><p>Confirmamos disponibilidad, pago y entrega por WhatsApp.</p></div></li></ol></section>
+  </main>
+  <footer class="section-wrap"><a class="logo" href="#">STLN<span>3D</span><sup>®</sup></a><p>Diseño que se imprime. Y se vive.</p><span>Lima, Perú · © <span id="year"></span> STLN3D</span></footer>
+  <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title"><div class="dialog-heading"><div><p class="eyebrow">TUS PRÓXIMAS PIEZAS</p><h2 id="cart-title">Tu carrito</h2></div><button class="icon-button" data-close="cart-dialog" aria-label="Cerrar carrito">×</button></div><div id="cart-items"></div><div class="cart-bottom"><div class="total"><span>Subtotal</span><strong id="cart-total">S/ 0.00</strong></div><p>Envío y disponibilidad se confirman por WhatsApp.</p><button id="checkout" class="button button-dark">Pedir por WhatsApp <span>↗</span></button><p id="checkout-note" role="status"></p></div></dialog>
+  <dialog id="product-dialog" class="product-dialog" aria-labelledby="detail-title"><button class="icon-button detail-close" data-close="product-dialog" aria-label="Cerrar detalle">×</button><div id="product-detail"></div></dialog>
+  <div id="toast" role="status" class="toast" hidden></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

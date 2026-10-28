@@ -1,0 +1,12 @@
+{
+  "name": "stln3d-store",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.js",
+    "build": "tailwindcss -i css/input.css -o css/output.css --minify && node scripts/build.js",
+    "test": "node --test"
+  },
+  "devDependencies": { "tailwindcss": "3.4.17" }
+}
